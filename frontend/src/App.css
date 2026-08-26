@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+.dashboard {
+  max-width: 1400px;
+  margin: auto;
+  padding: 30px;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #667085;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #172033;
+  color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+.scenario {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.scenario strong {
+  margin-left: 8px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card span {
+  display: block;
+  color: #667085;
+  margin-bottom: 10px;
+}
+
+.card strong {
+  font-size: 28px;
+}
+
+.payments {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+}
+
+.failed {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.incident-panel,
+.diagnosis-panel {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.healthy {
+  padding: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.incident {
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff1f1;
+}
+
+.incident h3 {
+  margin-top: 0;
+}
+
+.diagnosis-card {
+  padding: 20px;
+  border-radius: 8px;
+  background: #f7f8fa;
+}
+
+.diagnosis-card h3 {
+  margin-top: 0;
+}
