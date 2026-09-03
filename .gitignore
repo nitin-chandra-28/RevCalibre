@@ -1,3 +1,11 @@
 node_modules/
 .env
 .DS_Store
+
+echo "__pycache__/" >> .gitignore
+echo "*.pyc" >> .gitignore
+
+echo ".venv/" >> .gitignore
+echo "venv/" >> .gitignore
+
+git rm --cached ml-service/__pycache__/api.cpython-313.pyc
