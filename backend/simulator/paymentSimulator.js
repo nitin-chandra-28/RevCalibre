@@ -40,13 +40,16 @@ export function generatePayment(scenario = "NORMAL") {
   }
 
   return {
-    paymentId: `pay_${crypto.randomUUID()}`,
-    merchantId: `merchant_${Math.floor(Math.random() * 5) + 1}`,
-    customerId: `customer_${Math.floor(Math.random() * 100) + 1}`,
-    amount,
-    status,
-    errorCode,
-    retryCount: 0,
-    timestamp: new Date().toISOString()
-  };
+  paymentId: `pay_${crypto.randomUUID()}`,
+  merchantId: `merchant_${Math.floor(Math.random() * 5) + 1}`,
+  customerId: `customer_${Math.floor(Math.random() * 100) + 1}`,
+  amount,
+  status,
+  errorCode,
+  retryCount: 0,
+  timestamp: new Date().toISOString(),
+
+  // TEMPORARY: Phase 6 Razorpay testing
+
+};
 }
